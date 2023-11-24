@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+ let value=localStorage.getItem("cart")
+let item=JSON.parse(value)
+
+console.log(item);
+let p=document.createElement("img")
+p.setAttribute("src",item.thumbnail)
+
+document.body.appendChild(p)
+
+
+    </script>
+</body>
+</html>
